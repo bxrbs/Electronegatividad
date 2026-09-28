@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Electronegatividad</title>
+    <link rel="icon" href="zorro.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Calculadora de Electronegatividad</h2>
+
+    <div id="subtitulo">
+        <h3>Escala de Pauling★</h3>
+    </div>
+
+    <div id="main">
+        <form id="formulario">
+
+        <label for="elemento1">Selecciona el primer elemento:</label><br>
+
+            <select name="elemento1" id="elemento1" required>
+                <option value="">Select</option>
+                <option value="Ac">Actinio (Ac)</option>
+                <option value="Al">Aluminio (Al)</option>
+                <option value="Am">Americio (Am)</option>
+                <option value="Sb">Antimonio (Sb)</option>
+                <option value="Ar">Argón (Ar)</option>
+                <option value="As">Arsénico (As)</option>
+                <option value="At">Ástato (At)</option>
+                <option value="S">Azufre (S)</option>
+
+                <option value="Ba">Bario (Ba)</option>
+                <option value="Be">Berilio (Be)</option>
+                <option value="Bk">Berkelio (Bk)</option>
+                <option value="Bi">Bismuto (Bi)</option>
+                <option value="Bh">Bohrio (Bh)</option>
+                <option value="B">Boro (B)</option>
+                <option value="Br">Bromo (Br)</option>
+                <option value="Cd">Cadmio (Cd)</option>
+                <option value="Ca">Calcio (Ca)</option>
+                <option value="Cf">Californio (Cf)</option>
+                <option value="C">Carbono (C)</option>
+                <option value="Ce">Cerio (Ce)</option>
+                <option value="Cs">Cesio (Cs)</option>
+                <option value="Cl">Cloro (Cl)</option>
+                <option value="Co">Cobalto (Co)</option>
+                <option value="Cu">Cobre (Cu)</option>
+                <option value="Cn">Copernicium (Cn)</option>
+                <option value="Cr">Cromo (Cr)</option>
+                <option value="Cm">Curio (Cm)</option>
+                <option value="Ds">Darmstadio (Ds)</option>
+                <option value="Dy">Disprosio (Dy)</option>
+                <option value="Db">Dubnio (Db)</option>
+                <option value="Es">Einstenio (Es)</option>
+                <option value="Er">Erbio (Er)</option>
+
+                <option value="Sc">Escandio (Sc)</option>
+                <option value="Sn">Estaño (Sn)</option>
+                <option value="Sr">Estroncio (Sr)</option>
+                <option value="Eu">Europio (Eu)</option>
+                <option value="Fm">Fermio (Fm)</option>
+                <option value="Fl">Flerovium (Fl)</option>
+                <option value="F">Fluor (F)</option>
+                <option value="P">Fósforo (P)</option>
+                <option value="Fr">Francio (Fr)</option>
+                <option value="Gd">Gadolinio (Gd)</option>
+                <option value="Ga">Galio (Ga)</option>
+                <option value="Ge">Germanio (Ge)</option>
+                <option value="Hf">Hafnio (Hf)</option>
+                <option value="Hs">Hassio (Hs)</option>
+                <option value="He">Helio (He)</option>
+                <option value="H">Hidrógeno (H)</option>
+                <option value="Fe">Hierro (Fe)</option>
+                <option value="Ho">Holmio (Ho)</option>
+                <option value="In">Indio (In)</option>
+                <option value="I">Iodo (I)</option>
+                <option value="Ir">Iridio (Ir)</option>
+                <option value="Yb">Iterbio (Yb)</option>
+                <option value="Y">Itrio (Y)</option>
+                <option value="Kr">Kryptón (Kr)</option> <!--KRYPTOOON!!!-->
+
+                <option value="La">Lantano (La)</option>
+                <option value="Lr">Lawrencio (Lr)</option>
+                <option value="Li">Litio (Li)</option>
+                <option value="Lv">Livermorium (Lv)</option>
+                <option value="Lu">Lutecio (Lu)</option>
+                <option value="Mg">Magnesio (Mg)</option>
+                <option value="Mn">Manganeso (Mn)</option>
+                <option value="Mt">Meitnerio (Mt)</option>
+                <option value="Md">Mendelevio (Md)</option>
+                <option value="Hg">Mercurio (Hg)</option>
+                <option value="Mo">Molibdeno (Mo)</option>
+                <option value="Mc">Moscovium (Mc)</option>
+                <option value="Nd">Neodimio (Nd)</option>
+                <option value="Ne">Neón (Ne)</option>
+                <option value="Np">Neptunio (Np)</option>
+                <option value="Nh">Nihonium (Nh)</option>
+                <option value="Nb">Niobio (Nb)</option>
+                <option value="Ni">Níquel (Ni)</option>
+                <option value="N">Nitrógeno (N)</option>
+                <option value="No">Nobelio (No)</option>
+                <option value="Og">Oganesson (Og)</option>
+                <option value="Au">Oro (Au)</option>
+                <option value="Os">Osmio (Os)</option>
+                <option value="O">Oxígeno (O)</option>
+
+                <option value="Pd">Paladio (Pd)</option>
+                <option value="Ag">Plata (Ag)</option>
+                <option value="Pt">Platino (Pt)</option>
+                <option value="Pb">Plomo (Pb)</option>
+                <option value="Pu">Plutonio (Pu)</option>
+                <option value="Po">Polonio (Po)</option>
+                <option value="K">Potasio (K)</option>
+                <option value="Pr">Praseodimio (Pr)</option>
+                <option value="Pm">Promecio (Pm)</option>
+                <option value="Pa">Protactinio (Pa)</option>
+                <option value="Ra">Radio (Ra)</option>
+                <option value="Rn">Radón (Rn)</option>
+                <option value="Re">Renio (Re)</option>
+                <option value="Rh">Rodio (Rh)</option>
+                <option value="Rg">Roentgenium (Rg)</option>
+                <option value="Rb">Rubidio (Rb)</option>
+                <option value="Ru">Rutenio (Ru)</option>
+                <option value="Rf">Rutherfordio (Rf)</option>
+                <option value="Sm">Samario (Sm)</option>
+                <option value="Sg">Seaborgio (Sg)</option>
+                <option value="Se">Selenio (Se)</option>
+                <option value="Si">Sílice (Si)</option>
+                <option value="Na">Sodio (Na)</option>
+                <option value="Tl">Talio (Tl)</option>
+
+                <option value="Ta">Tantalio (Ta)</option>
+                <option value="Tc">Tecnecio (Tc)</option>
+                <option value="Te">Teluro (Te)</option>
+                <option value="Ts">Tennessine (Ts)</option>
+                <option value="Tb">Terbio (Tb)</option>
+                <option value="Ti">Titanio (Ti)</option>
+                <option value="Th">Torio (Th)</option>
+                <option value="Tm">Tulio (Tm)</option>
+                <option value="U">Uranio (U)</option>
+                <option value="V">Vanadio (V)</option>
+                <option value="W">Wolframio (W)</option>
+                <option value="Xe">Xenón (Xe)</option>
+                <option value="Zn">Zinc (Zn)</option>
+                <option value="Zr">Zriconio (Zr)</option>
+                
+            </select>
+
+        <br>
+        <label for="elemento2">Selecciona el segundo elemento:</label><br>
+
+            <select name="elemento2" id="elemento2" required>
+                <option value="">Select</option>
+                <option value="Ac">Actinio (Ac)</option>
+                <option value="Al">Aluminio (Al)</option>
+                <option value="Am">Americio (Am)</option>
+                <option value="Sb">Antimonio (Sb)</option>
+                <option value="Ar">Argón (Ar)</option>
+                <option value="As">Arsénico (As)</option>
+                <option value="At">Ástato (At)</option>
+                <option value="S">Azufre (S)</option>
+
+                <option value="Ba">Bario (Ba)</option>
+                <option value="Be">Berilio (Be)</option>
+                <option value="Bk">Berkelio (Bk)</option>
+                <option value="Bi">Bismuto (Bi)</option>
+                <option value="Bh">Bohrio (Bh)</option>
+                <option value="B">Boro (B)</option>
+                <option value="Br">Bromo (Br)</option>
+                <option value="Cd">Cadmio (Cd)</option>
+                <option value="Ca">Calcio (Ca)</option>
+                <option value="Cf">Californio (Cf)</option>
+                <option value="C">Carbono (C)</option>
+                <option value="Ce">Cerio (Ce)</option>
+                <option value="Cs">Cesio (Cs)</option>
+                <option value="Cl">Cloro (Cl)</option>
+                <option value="Co">Cobalto (Co)</option>
+                <option value="Cu">Cobre (Cu)</option>
+                <option value="Cn">Copernicium (Cn)</option>
+                <option value="Cr">Cromo (Cr)</option>
+                <option value="Cm">Curio (Cm)</option>
+                <option value="Ds">Darmstadio (Ds)</option>
+                <option value="Dy">Disprosio (Dy)</option>
+                <option value="Db">Dubnio (Db)</option>
+                <option value="Es">Einstenio (Es)</option>
+                <option value="Er">Erbio (Er)</option>
+
+                <option value="Sc">Escandio (Sc)</option>
+                <option value="Sn">Estaño (Sn)</option>
+                <option value="Sr">Estroncio (Sr)</option>
+                <option value="Eu">Europio (Eu)</option>
+                <option value="Fm">Fermio (Fm)</option>
+                <option value="Fl">Flerovium (Fl)</option>
+                <option value="F">Fluor (F)</option>
+                <option value="P">Fósforo (P)</option>
+                <option value="Fr">Francio (Fr)</option>
+                <option value="Gd">Gadolinio (Gd)</option>
+                <option value="Ga">Galio (Ga)</option>
+                <option value="Ge">Germanio (Ge)</option>
+                <option value="Hf">Hafnio (Hf)</option>
+                <option value="Hs">Hassio (Hs)</option>
+                <option value="He">Helio (He)</option>
+                <option value="H">Hidrógeno (H)</option>
+                <option value="Fe">Hierro (Fe)</option>
+                <option value="Ho">Holmio (Ho)</option>
+                <option value="In">Indio (In)</option>
+                <option value="I">Iodo (I)</option>
+                <option value="Ir">Iridio (Ir)</option>
+                <option value="Yb">Iterbio (Yb)</option>
+                <option value="Y">Itrio (Y)</option>
+                <option value="Kr">Kryptón (Kr)</option> <!--KRYPTOOON!!!-->
+
+                <option value="La">Lantano (La)</option>
+                <option value="Lr">Lawrencio (Lr)</option>
+                <option value="Li">Litio (Li)</option>
+                <option value="Lv">Livermorium (Lv)</option>
+                <option value="Lu">Lutecio (Lu)</option>
+                <option value="Mg">Magnesio (Mg)</option>
+                <option value="Mn">Manganeso (Mn)</option>
+                <option value="Mt">Meitnerio (Mt)</option>
+                <option value="Md">Mendelevio (Md)</option>
+                <option value="Hg">Mercurio (Hg)</option>
+                <option value="Mo">Molibdeno (Mo)</option>
+                <option value="Mc">Moscovium (Mc)</option>
+                <option value="Nd">Neodimio (Nd)</option>
+                <option value="Ne">Neón (Ne)</option>
+                <option value="Np">Neptunio (Np)</option>
+                <option value="Nh">Nihonium (Nh)</option>
+                <option value="Nb">Niobio (Nb)</option>
+                <option value="Ni">Níquel (Ni)</option>
+                <option value="N">Nitrógeno (N)</option>
+                <option value="No">Nobelio (No)</option>
+                <option value="Og">Oganesson (Og)</option>
+                <option value="Au">Oro (Au)</option>
+                <option value="Os">Osmio (Os)</option>
+                <option value="O">Oxígeno (O)</option>
+
+                <option value="Pd">Paladio (Pd)</option>
+                <option value="Ag">Plata (Ag)</option>
+                <option value="Pt">Platino (Pt)</option>
+                <option value="Pb">Plomo (Pb)</option>
+                <option value="Pu">Plutonio (Pu)</option>
+                <option value="Po">Polonio (Po)</option>
+                <option value="K">Potasio (K)</option>
+                <option value="Pr">Praseodimio (Pr)</option>
+                <option value="Pm">Promecio (Pm)</option>
+                <option value="Pa">Protactinio (Pa)</option>
+                <option value="Ra">Radio (Ra)</option>
+                <option value="Rn">Radón (Rn)</option>
+                <option value="Re">Renio (Re)</option>
+                <option value="Rh">Rodio (Rh)</option>
+                <option value="Rg">Roentgenium (Rg)</option>
+                <option value="Rb">Rubidio (Rb)</option>
+                <option value="Ru">Rutenio (Ru)</option>
+                <option value="Rf">Rutherfordio (Rf)</option>
+                <option value="Sm">Samario (Sm)</option>
+                <option value="Sg">Seaborgio (Sg)</option>
+                <option value="Se">Selenio (Se)</option>
+                <option value="Si">Sílice (Si)</option>
+                <option value="Na">Sodio (Na)</option>
+                <option value="Tl">Talio (Tl)</option>
+
+                <option value="Ta">Tantalio (Ta)</option>
+                <option value="Tc">Tecnecio (Tc)</option>
+                <option value="Te">Teluro (Te)</option>
+                <option value="Ts">Tennessine (Ts)</option>
+                <option value="Tb">Terbio (Tb)</option>
+                <option value="Ti">Titanio (Ti)</option>
+                <option value="Th">Torio (Th)</option>
+                <option value="Tm">Tulio (Tm)</option>
+                <option value="U">Uranio (U)</option>
+                <option value="V">Vanadio (V)</option>
+                <option value="W">Wolframio (W)</option>
+                <option value="Xe">Xenón (Xe)</option>
+                <option value="Zn">Zinc (Zn)</option>
+                <option value="Zr">Zriconio (Zr)</option>
+                
+            </select>
+
+            <br>
+            <button type="button" onclick="calcular()">Calcular</button><br><br>
+
+        </form>
+
+        <h3>Resultado:</h3>
+        <p id="resultado"></p>
+        <button type="button" onclick="reiniciar()">Reiniciar</button>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
